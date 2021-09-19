@@ -1,5 +1,5 @@
 <!---
- Copyright (c) 2018 Swashata Ghosh <swashata@wpquark.com>
+ Copyright (c) 2021 Swashata Ghosh <swashata@wpquark.com>
 
  This software is released under the MIT License.
  https://opensource.org/licenses/MIT
@@ -28,7 +28,7 @@ NPM is the preferred way of installation. You can find it from [here](https://ww
 From your project do
 
 ```bash
-npm i @fonticonpicker/react-fonticonpicker
+npm i @re.d_beard./react-fonticonpicker
 ```
 
 Also install the peer dependencies yourself.
@@ -42,13 +42,13 @@ And require the file.
 #### ES6
 
 ```js
-import FontIconPicker from '@fonticonpicker/react-fonticonpicker';
+import FontIconPicker from '@re.d_beard./react-fonticonpicker';
 ```
 
 #### ES5
 
 ```js
-const FontIconPicker = require('@fonticonpicker/react-fonticonpicker');
+const FontIconPicker = require('@re.d_beard./react-fonticonpicker');
 ```
 
 And use it as React Component. Check the [documentation site](http://fonticonpicker.github.io/react-fonticonpicker/) for more example.
@@ -80,11 +80,11 @@ Now edit your `App.js` file to include the following.
 
 ```js
 import React, { Component } from 'react';
-import FontIconPicker from '@fonticonpicker/react-fonticonpicker';
+import FontIconPicker from '@re.d_beard./react-fonticonpicker';
 import logo from './logo.svg';
 import './App.css';
-import '@fonticonpicker/react-fonticonpicker/dist/fonticonpicker.base-theme.react.css';
-import '@fonticonpicker/react-fonticonpicker/dist/fonticonpicker.material-theme.react.css';
+import '@re.d_beard./react-fonticonpicker/dist/fonticonpicker.base-theme.react.css';
+import '@re.d_beard./react-fonticonpicker/dist/fonticonpicker.material-theme.react.css';
 
 class App extends Component {
   constructor(props) {

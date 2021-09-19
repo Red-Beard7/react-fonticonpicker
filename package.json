@@ -1,6 +1,6 @@
 {
-  "name": "@re.d/react-fonticonpicker",
-  "version": "1.2.0",
+  "name": "@re.d_beard./react-fonticonpicker",
+  "version": "1.2.4",
   "description": "A react component to show a picker element to select font icons or SVG.",
   "main": "dist/fonticonpicker.react.js",
   "directories": {
@@ -28,7 +28,7 @@
   "author": "Nabcellent <nabcellent.dev@gmail.com> (https://swashata.me)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/fontIconPicker/react-fonticonpicker/issues"
+    "url": "https://github.com/Red-Beard7/react-fonticonpicker/issues"
   },
   "homepage": "https://github.com/Red-Beard7/react-fonticonpicker#readme",
   "peerDependencies": {
@@ -102,6 +102,7 @@
     "react-router-dom": "^5.3.0",
     "react-router-transition": "^2.1.0",
     "react-syntax-highlighter": "^15.4.4",
-    "react-transition-group": "^4.4.2"
+    "react-transition-group": "^4.4.2",
+    "uglifyjs-webpack-plugin": "^2.2.0"
   }
 }

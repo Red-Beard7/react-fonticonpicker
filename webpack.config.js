@@ -15,7 +15,7 @@ React Component to show a picker element to pick font-icons & svg
 @link https://github.com/Red-Beard7/react-fonticonpicker
 @license MIT
 
-Copyright (c) ${new Date().getFullYear()} Swashata Ghosh <swashata@wpquark.com>
+Copyright (c) ${new Date().getFullYear()} Nabcellent
 
 This software is released under the MIT License.
 https://opensource.org/licenses/MIT
