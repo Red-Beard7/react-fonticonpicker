@@ -10,30 +10,6 @@ import className from 'classnames';
 import { getOffset, debounce } from '../helpers/iconHelpers';
 
 class FipDropDownPortal extends React.PureComponent {
-	static propTypes = {
-		appendRoot: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]), // eslint-disable-line
-		children: PropTypes.node.isRequired,
-		domRef: PropTypes.object.isRequired, // eslint-disable-line
-		btnRef: PropTypes.object.isRequired, // eslint-disable-line
-		className: PropTypes.string.isRequired,
-	};
-
-	static defaultProps = {
-		appendRoot: false,
-	};
-
-	static getDerivedStateFromProps(nextProps) {
-		// The only thing we are interested is the appendRoot
-		const {
-			appendRoot,
-			portalClasses,
-		} = FipDropDownPortal.calculateAppendAndClass(nextProps.appendRoot);
-		return {
-			appendRoot,
-			portalClasses,
-		};
-	}
-
 	/**
 	 * Calculate append Node and Portal classes based on appendRoot settings
 	 *
@@ -56,6 +32,30 @@ class FipDropDownPortal extends React.PureComponent {
 		return {
 			portalClasses,
 			appendRoot: rootNode,
+		};
+	}
+
+	static propTypes = {
+		appendRoot: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]), // eslint-disable-line
+		children: PropTypes.node.isRequired,
+		domRef: PropTypes.object.isRequired, // eslint-disable-line
+		btnRef: PropTypes.object.isRequired, // eslint-disable-line
+		className: PropTypes.string.isRequired,
+	};
+
+	static defaultProps = {
+		appendRoot: false,
+	};
+
+	static getDerivedStateFromProps(nextProps) {
+		// The only thing we are interested is the appendRoot
+		const {
+			appendRoot,
+			portalClasses,
+		} = FipDropDownPortal.calculateAppendAndClass(nextProps.appendRoot);
+		return {
+			appendRoot,
+			portalClasses,
 		};
 	}
 

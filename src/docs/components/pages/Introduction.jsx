@@ -95,12 +95,13 @@ class Introduction extends React.Component {
 					</div>
 				</div>
 				<ReactMarkdown
-					source={intro}
 					escapeHtml
 					renderers={{
 						code: codeRenderer,
 					}}
-				/>
+				>
+					{intro}
+				</ReactMarkdown>
 			</div>
 		);
 	}

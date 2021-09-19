@@ -12,12 +12,13 @@ import pkg from '../../../../package.json';
 const Installation = () => (
 	<div className="fip-install">
 		<ReactMarkdown
-			source={installation}
 			escapeHtml
 			renderers={{
 				code: codeRenderer,
 			}}
-		/>
+		>
+			{installation}
+		</ReactMarkdown>
 		<h3>peerDependencies</h3>
 		<p>FontIconPicker has the following dependencies.</p>
 		<div className="list-group">

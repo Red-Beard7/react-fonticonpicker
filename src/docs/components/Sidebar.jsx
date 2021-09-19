@@ -4,7 +4,6 @@
 // https://opensource.org/licenses/MIT
 
 import React from 'react';
-import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
 import className from 'classnames';
 import routes from '../helpers/routes';

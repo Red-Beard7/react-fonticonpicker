@@ -15,9 +15,13 @@ import {
 
 class FipIconContainer extends React.PureComponent {
 	static propTypes = {
+		// eslint-disable-next-line react/no-unused-prop-types
 		categories: PropTypes.arrayOf(PropTypes.string),
+		// eslint-disable-next-line react/no-unused-prop-types
 		currentCategory: PropTypes.number,
+		// eslint-disable-next-line react/no-unused-prop-types
 		isMulti: PropTypes.bool.isRequired,
+		// eslint-disable-next-line react/no-unused-prop-types
 		icons: PropTypes.oneOfType([
 			PropTypes.arrayOf(PropTypes.string),
 			PropTypes.arrayOf(PropTypes.number),
@@ -28,6 +32,7 @@ class FipIconContainer extends React.PureComponent {
 				]),
 			),
 		]).isRequired,
+		// eslint-disable-next-line react/no-unused-prop-types
 		search: PropTypes.oneOfType([
 			PropTypes.objectOf(PropTypes.arrayOf(PropTypes.string)),
 			PropTypes.arrayOf(PropTypes.string),
@@ -39,9 +44,11 @@ class FipIconContainer extends React.PureComponent {
 				PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 			),
 		]).isRequired,
+		// eslint-disable-next-line react/no-unused-prop-types
 		currentSearch: PropTypes.string.isRequired,
 		handleChangeValue: PropTypes.func.isRequired,
 		currentPage: PropTypes.number.isRequired,
+		// eslint-disable-next-line react/no-unused-prop-types
 		iconsPerPage: PropTypes.number.isRequired,
 		handleChangePage: PropTypes.func.isRequired,
 		renderIcon: PropTypes.func.isRequired,
@@ -105,6 +112,8 @@ class FipIconContainer extends React.PureComponent {
 	 * Get the current set of icons, based on search
 	 *
 	 * @param {array} currentIconsSet icon set from where to filter
+	 * @param currentSearchSet
+	 * @param searchString
 	 * @returns {array} filtered list of icons to slice on
 	 */
 	static getActiveIcons(currentIconsSet, currentSearchSet, searchString) {
@@ -138,7 +147,8 @@ class FipIconContainer extends React.PureComponent {
 	 * Get icons or search set based on selected category
 	 *
 	 * @param {number} currentCategory current categories
-	 * @param {string} key the props key to use
+	 * @param categories
+	 * @param source
 	 * @returns {array} filtered and flattened source
 	 */
 	static getCategoryFilteredState(currentCategory, categories, source) {
@@ -158,11 +168,7 @@ class FipIconContainer extends React.PureComponent {
 		if (currentCategory !== 0 && Array.isArray(categories)) {
 			category = categories[currentCategory] || null;
 		}
-		const currentSourceSet = flattenPossiblyCategorizedSource(
-			source,
-			category,
-		);
-		return currentSourceSet;
+		return flattenPossiblyCategorizedSource(source, category);
 	}
 
 	/**

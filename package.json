@@ -1,5 +1,5 @@
 {
-  "name": "@fonticonpicker/react-fonticonpicker",
+  "name": "@re.d/react-fonticonpicker",
   "version": "1.2.0",
   "description": "A react component to show a picker element to select font icons or SVG.",
   "main": "dist/fonticonpicker.react.js",
@@ -15,27 +15,28 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fontIconPicker/react-fonticonpicker.git"
+    "url": "git+https://github.com/Red-Beard7/react-fonticonpicker.git"
   },
   "keywords": [
     "react",
     "react-component",
     "fonticonpicker",
     "svgpicker",
-    "iconpicker"
+    "iconpicker",
+    "icon-picker"
   ],
-  "author": "Swashata Ghosh <swashata4u@gmail.com> (https://swashata.me)",
+  "author": "Nabcellent <nabcellent.dev@gmail.com> (https://swashata.me)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fontIconPicker/react-fonticonpicker/issues"
   },
-  "homepage": "https://github.com/fontIconPicker/react-fonticonpicker#readme",
+  "homepage": "https://github.com/Red-Beard7/react-fonticonpicker#readme",
   "peerDependencies": {
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0",
-    "classnames": "^2.2.5",
-    "prop-types": "^15.6.1",
-    "react-transition-group": "^2.3.0"
+    "classnames": "^2.3.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-transition-group": "^4.4.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.42",
@@ -48,7 +49,7 @@
     "babel-eslint": "^8.2.2",
     "babel-jest": "^22.4.3",
     "babel-loader": "^8.0.0-beta.2",
-    "classnames": "^2.2.5",
+    "classnames": "^2.3.1",
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.5.1",
     "css-loader": "^0.28.11",
@@ -76,29 +77,31 @@
     "normalize.css": "^8.0.0",
     "postcss-loader": "^2.1.3",
     "prettier": "1.11.1",
-    "prop-types": "^15.6.1",
+    "prop-types": "^15.7.2",
     "raw-loader": "^0.5.1",
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-hot-loader": "^4.0.0",
-    "react-markdown": "^3.3.0",
-    "react-router-dom": "^4.2.2",
-    "react-router-transition": "^1.2.1",
-    "react-syntax-highlighter": "^7.0.2",
-    "react-transition-group": "^2.3.0",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.20.3",
     "stylelint": "^9.2.0",
     "stylelint-config-prettier": "^3.0.4",
     "stylelint-config-recommended-scss": "^3.2.0",
     "stylelint-scss": "^3.0.0",
-    "webpack": "^4.4.1",
+    "webpack": "^4.46.0",
     "webpack-bundle-analyzer": "^2.11.1",
-    "webpack-cli": "^2.0.13",
-    "webpack-dev-server": "^3.1.1"
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.2.1"
   },
-  "dependencies": {},
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "react-markdown": "^7.0.1",
+    "react-motion": "^0.5.2",
+    "react-router-dom": "^5.3.0",
+    "react-router-transition": "^2.1.0",
+    "react-syntax-highlighter": "^15.4.4",
+    "react-transition-group": "^4.4.2"
   }
 }

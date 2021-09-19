@@ -6,7 +6,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import className from 'classnames';
-import { CSSTransition } from 'react-transition-group';
+import { CSSTransition } from 'react-transition-group/esm';
 import FipButton from './FipButton';
 import FipDropDown from './FipDropDown';
 import FipDropDownPortal from './FipDropDownPortal';
@@ -18,6 +18,7 @@ const defaultMultiValue = [];
 const defaultStringValue = '';
 
 class FontIconPicker extends React.PureComponent {
+	static displayName = 'FontIconPicker';
 	static propTypes = {
 		icons: PropTypes.oneOfType([
 			PropTypes.arrayOf(PropTypes.string),
@@ -74,8 +75,6 @@ class FontIconPicker extends React.PureComponent {
 		noSelectedPlaceholder: 'Select icon',
 		closeOnSelect: false,
 	};
-
-	static displayName = 'FontIconPicker';
 
 	static getDerivedStateFromProps(nextProps, prevState) {
 		// Init the state
@@ -182,6 +181,7 @@ class FontIconPicker extends React.PureComponent {
 		// internel state for handling animation
 		this.fipPortalComputedStyle = null;
 	}
+
 	/* istanbul ignore next */
 	componentDidMount() {
 		const events = ['click'];
@@ -192,6 +192,7 @@ class FontIconPicker extends React.PureComponent {
 		// Update the value for the parent
 		this.props.onChange(this.state.value);
 	}
+
 	/* istanbul ignore next */
 	componentWillUnmount() {
 		const events = ['click'];
@@ -326,6 +327,7 @@ class FontIconPicker extends React.PureComponent {
 
 	handleDeleteValue = value => {
 		let newValue;
+
 		if (this.props.isMulti) {
 			newValue = this.state.value.filter(item => item !== value);
 		} else {

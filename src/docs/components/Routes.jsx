@@ -4,9 +4,9 @@
 // https://opensource.org/licenses/MIT
 
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { AnimatedSwitch, spring } from 'react-router-transition';
-import presets from 'react-motion/lib/spring';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { AnimatedSwitch } from 'react-router-transition';
+// import presets from 'react-motion/lib/spring';
 
 import Sidebar from './Sidebar';
 import routes from '../helpers/routes';

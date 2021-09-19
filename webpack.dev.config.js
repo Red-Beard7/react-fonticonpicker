@@ -85,9 +85,13 @@ module.exports = {
 		extensions: ['.js', '.jsx'],
 	},
 	devServer: {
-		contentBase: path.join(__dirname, 'build'),
+		static: {
+			directory: path.join(__dirname, 'build'),
+		},
 		port: 7770,
-		overlay: true,
+		client: {
+			overlay: true,
+		},
 		historyApiFallback: true,
 	},
 	mode: 'development',

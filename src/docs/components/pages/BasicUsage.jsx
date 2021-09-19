@@ -5,8 +5,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Route, NavLink } from 'react-router-dom';
-import { AnimatedSwitch, spring } from 'react-router-transition';
-import presets from 'react-motion/lib/spring';
+import { AnimatedSwitch } from 'react-router-transition';
 
 import FontIconPicker from '../../../js/FontIconPicker';
 import * as iconDefs from '../../helpers/iconDefs';
@@ -100,60 +99,65 @@ const FipNCP = () => (
 	<div className="fip-usage-ncp">
 		<FipNoCategory />
 		<ReactMarkdown
-			source={fipncp}
 			escapeHtml
 			renderers={{
 				code: codeRenderer,
 			}}
-		/>
+		>
+			{fipncp}
+		</ReactMarkdown>
 	</div>
 );
 const FipCP = () => (
 	<div className="fip-usage-cp">
 		<FipCategory />
 		<ReactMarkdown
-			source={fipcp}
 			escapeHtml
 			renderers={{
 				code: codeRenderer,
 			}}
-		/>
+		>
+			{fipcp}
+		</ReactMarkdown>
 	</div>
 );
 const FipSMP = () => (
 	<div className="fip-usage-smp">
 		<FipPickers />
 		<ReactMarkdown
-			source={fipsmp}
 			escapeHtml
 			renderers={{
 				code: codeRenderer,
 			}}
-		/>
+		>
+			{fipsmp}
+		</ReactMarkdown>
 	</div>
 );
 const FipAR = () => (
 	<div className="fip-usage-ar">
 		<FipAttribute />
 		<ReactMarkdown
-			source={fipar}
 			escapeHtml
 			renderers={{
 				code: codeRenderer,
 			}}
-		/>
+		>
+			{fipar}
+		</ReactMarkdown>
 	</div>
 );
 const FipCR = () => (
 	<div className="fip-usage-cr">
 		<FipCustom />
 		<ReactMarkdown
-			source={fipcr}
 			escapeHtml
 			renderers={{
 				code: codeRenderer,
 			}}
-		/>
+		>
+			{fipcr}
+		</ReactMarkdown>
 	</div>
 );
 
@@ -188,12 +192,13 @@ const links = {
 const BasicUsage = () => (
 	<div className="fip-usage">
 		<ReactMarkdown
-			source={basicusage}
 			escapeHtml
 			renderers={{
 				code: codeRenderer,
 			}}
-		/>
+		>
+			{basicusage}
+		</ReactMarkdown>
 
 		<h3>Examples with Code</h3>
 		<hr />

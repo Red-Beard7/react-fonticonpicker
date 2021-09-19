@@ -3,10 +3,10 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 import React from 'react';
-import { BrowserRouter, Route } from "react-router-dom"; // eslint-disable-line
+// import { BrowserRouter, Route } from "react-router-dom"; // eslint-disable-line
 
 import Routes from './Routes';
-import Logo from '../assets/fip.svg';
+// import Logo from '../assets/fip.svg';
 import pkg from '../../../package.json';
 
 const DocApp = () => (
