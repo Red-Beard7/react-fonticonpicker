@@ -5,7 +5,7 @@
  * React Component to show a picker element to pick font-icons & svg
  * 
  * @author Nabcellent <nabcellent.dev@gmail.com@wpquark.com>
- * @version 2.0.0
+ * @version 2.1.0
  * @link https://github.com/Red-Beard7/react-fonticonpicker
  * @license MIT
  * 
