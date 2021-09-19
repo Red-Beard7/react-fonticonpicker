@@ -1,6 +1,6 @@
 {
   "name": "@re.d_beard./react-fonticonpicker",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "A react component to show a picker element to select font icons or SVG.",
   "main": "dist/fonticonpicker.react.js",
   "directories": {
