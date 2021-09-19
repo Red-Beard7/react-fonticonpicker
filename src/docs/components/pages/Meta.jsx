@@ -12,13 +12,14 @@ import TableRenderer from '../TableRenderer';
 const Meta = () => (
 	<div className="fip-meta">
 		<ReactMarkdown
-			source={meta}
 			escapeHtml
 			renderers={{
 				code: codeRenderer,
 				table: TableRenderer,
 			}}
-		/>
+		>
+			{meta}
+		</ReactMarkdown>
 	</div>
 );
 

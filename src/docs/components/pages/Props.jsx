@@ -12,13 +12,14 @@ import TableRenderer from '../TableRenderer';
 const Props = () => (
 	<div className="fip-props">
 		<ReactMarkdown
-			source={props}
 			escapeHtml
 			renderers={{
 				code: codeRenderer,
 				table: TableRenderer,
 			}}
-		/>
+		>
+			{props}
+		</ReactMarkdown>
 	</div>
 );
 

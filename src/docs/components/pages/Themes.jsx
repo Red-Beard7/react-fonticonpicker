@@ -19,8 +19,8 @@ const Themes = () => (
 
 		<CodeBlock
 			language="js"
-			value={`import '@fonticonpicker/react-fonticonpicker/dist/fonticonpicker.base-theme.react.css';
-import '@fonticonpicker/react-fonticonpicker/dist/fonticonpicker.material-theme.react.css';`}
+			value={`import '@re.d_beard./react-fonticonpicker/dist/fonticonpicker.base-theme.react.css';
+import '@re.d_beard./react-fonticonpicker/dist/fonticonpicker.material-theme.react.css';`}
 		/>
 
 		<p>
