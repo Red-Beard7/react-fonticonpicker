@@ -5,7 +5,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Route, NavLink } from 'react-router-dom';
-import { AnimatedSwitch } from 'react-router-transition';
+import { AnimatedSwitch } from 'react-router-transition-lirsoft';
 
 import FontIconPicker from '../../../js/FontIconPicker';
 import * as iconDefs from '../../helpers/iconDefs';

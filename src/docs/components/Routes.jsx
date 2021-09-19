@@ -5,7 +5,7 @@
 
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import { AnimatedSwitch } from 'react-router-transition';
+import { AnimatedSwitch } from 'react-router-transition-lirsoft';
 // import presets from 'react-motion/lib/spring';
 
 import Sidebar from './Sidebar';

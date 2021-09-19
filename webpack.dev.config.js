@@ -88,7 +88,7 @@ module.exports = {
 		static: {
 			directory: path.join(__dirname, 'build'),
 		},
-		port: 7770,
+		port: 7777,
 		client: {
 			overlay: true,
 		},

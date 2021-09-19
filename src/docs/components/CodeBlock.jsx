@@ -10,8 +10,6 @@ import {
 } from 'react-syntax-highlighter/dist/esm/languages/prism';
 import tomorrow from 'react-syntax-highlighter/dist/esm/styles/prism/tomorrow';
 
-SyntaxHighlighter.registerLanguage('jsx', jsx);
-
 SyntaxHighlighter.registerLanguage('js', jsx);
 SyntaxHighlighter.registerLanguage('jsx', jsx);
 SyntaxHighlighter.registerLanguage('html', markup);

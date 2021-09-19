@@ -3,8 +3,8 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-import { spring } from 'react-router-transition';
-import presets from 'react-motion/lib/spring';
+import { spring } from 'react-router-transition-lirsoft';
+import presets from 're.d.react-motion/lib/spring';
 
 // wrap the `spring` helper to use a bouncy config
 function bounce(val) {
